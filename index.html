@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현금흐름 수익률 계산기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>현금흐름 수익률 계산기</h1>
+    <div class="calculator">
+        <div class="form-group">
+            <label for="purchasePrice">매입가 (₩):</label>
+            <input type="number" id="purchasePrice" placeholder="예: 1000000000">
+        </div>
+        <div class="form-group">
+            <label for="loanAmount">대출 금액 (₩):</label>
+            <input type="number" id="loanAmount" placeholder="예: 600000000">
+        </div>
+        <div class="form-group">
+            <label for="interestRate">이자율 (%):</label>
+            <input type="number" id="interestRate" placeholder="예: 3">
+        </div>
+        <div class="form-group">
+            <label for="loanPeriod">상환 기간 (년):</label>
+            <input type="number" id="loanPeriod" placeholder="예: 15">
+        </div>
+        <div class="form-group">
+            <label for="monthlyRent">월 임대 수익 (₩):</label>
+            <input type="number" id="monthlyRent" placeholder="예: 6000000">
+        </div>
+        <div class="form-group">
+            <label for="transactionCosts">총 부대비용 (₩):</label>
+            <input type="number" id="transactionCosts" placeholder="예: 50000000">
+        </div>
+        <button onclick="calculateCashFlow()">현금흐름 계산하기</button>
+        <div class="results" id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
